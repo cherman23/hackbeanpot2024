@@ -1,22 +1,58 @@
 .App {
-  text-align: center;
   font-family: monospace;
-  margin-top: 15%;
 }
 
 h1 {
-  color: black;
+  color: whitesmoke;
+  text-align: center;
   font-family: monospace;
+  margin-top: 15%;
+  font-size: 3rem;
 }
 
 body {
-  background-color: cornflowerblue;
+  background-color: rgb(27, 54, 93);
+}
+
+.about {
+  margin-top: 5px;
+  text-align: left;
+  font-size: 16px;
+  font-family: monospace;
+  color: whitesmoke;
+  background-color: rgb(27, 54, 93);
+  border: none;
+  text-decoration: blanchedalmond;
+}
+
+.about:hover{
+  text-decoration: underline;
+}
+
+.button:hover {opacity: 1}
+
+.container {
+  text-align: center;
+  display: center;
+  padding: 0.5rem;
 }
 
 .inputData[type=text] {
-
-  border-radius: 25px;
-  height: 20px;
   width: 30%;
-  padding: 10px;
+  padding: 1rem;
+  border-radius: 25px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: large;
+  border: none;
+}
+
+.inputData:hover{
+  box-shadow: 4px 4px 4px black;
+  border: none;
+}
+
+.inputData:focus {
+  border: none;
+  outline: none;
 }
