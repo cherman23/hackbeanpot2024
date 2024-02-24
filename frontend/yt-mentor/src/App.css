@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: monospace;
   margin-top: 15%;
 }
 
@@ -12,6 +13,10 @@ body {
   background-color: cornflowerblue;
 }
 
-.inputData {
-  height: 100%;
+.inputData[type=text] {
+
+  border-radius: 25px;
+  height: 20px;
+  width: 30%;
+  padding: 10px;
 }
