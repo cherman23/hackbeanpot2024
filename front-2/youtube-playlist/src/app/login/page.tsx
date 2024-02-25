@@ -34,14 +34,16 @@ export default function login() {
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl/none text-white dark:text-gray-300">
               LearnFlow
             </h1>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Enter the URL of a YouTube video to get started</p>
+            {/* <p className="text-sm text-gray-500 dark:text-gray-400">Enter the URL of a YouTube video to get started</p> */}
           </div>
           <form className="flex flex-col gap-4 max-w-sm w-full">
             <Input placeholder="Email" type="email" />
             <Input placeholder="Password" type="password" />
             <Button type="submit">Login</Button>
-            
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded" onClick={() => { window.location.href = "/signup" }}>Sign Up</Button>
+            <Link className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded" href="/signup">
+          Sign Up
+        </Link>
+            {/* <Button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded" onClick={() => { window.location.href = "/signup" }}>Sign Up</Button> */}
 
           </form>
         </main>
