@@ -3,6 +3,8 @@ Our project is an online learning tool that creates a YouTube playlist that gets
 
 # Set up
 Run the command using pip package manager:
-'''bash
-pip install -r requirements. txt
-''' 
+
+
+```bash
+pip install -r requirements.txt
+```
