@@ -1,14 +1,14 @@
 {
     "topic": "pytorch",
     "phrases": [
-        "How to {topic} for beginners",
-        "Basic {topic} tutorial",
-        "{topic} 101",
-        "Advanced {topic} techniques",
-        "Intermediate {topic} guide",
-        "Next level {topic}",
-        "Mastering {topic}",
-        "Expert {topic} strategies",
-        "Deep dive into {topic}"
+        "How to {pytorch} for beginners",
+        "Basic {pytorch} tutorial",
+        "{pytorch} 101",
+        "Advanced {pytorch} techniques",
+        "Intermediate {pytorch} guide",
+        "Next level {pytorch}",
+        "Mastering {pytorch}",
+        "Expert {pytorch} strategies",
+        "Deep dive into {pytorch}"
     ]
 }

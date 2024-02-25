@@ -26,7 +26,7 @@ for phrase in phrases:
             video_id = item['id']['videoId']
             title = item['snippet']['title']
             video_url = f'https://www.youtube.com/watch?v={video_id}'
-            videos.append({'title': title, 'url': video_url})
+            videos.append({'title': title, 'url': video_url, 'videoId': video_id})  # Include videoId in the output
         except KeyError:
             # Handle missing 'videoId' key
             print(f"Skipping item: {item}")

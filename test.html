@@ -8,10 +8,39 @@
 </head>
 <body>
     <h1>Submit Input</h1>
-    <form action="http://127.0.0.1:8000/input" method="post">
+    <form id="inputForm">
         <label for="inputText">Enter Text:</label><br>
         <textarea id="inputText" name="text" rows="4" cols="50"></textarea><br><br>
         <input type="submit" value="Submit">
     </form>
+
+    <script>
+        document.getElementById('inputForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+    
+            const formData = new FormData(this);
+            const url = 'http://127.0.0.1:8000/input'; // URL of your FastAPI endpoint
+    
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    body: formData
+                });
+    
+                if (!response.ok) {
+                    throw new Error('Failed to submit form');
+                }
+    
+                const responseData = await response.json(); // Parse the response body as JSON
+                console.log(responseData); // Log the response data to the console
+    
+                // Handle success, e.g., show a success message or redirect
+            } catch (error) {
+                console.error(error);
+                // Handle error, e.g., show an error message
+            }
+        });
+    </script>
+    
 </body>
 </html>
